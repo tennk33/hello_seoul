@@ -44,7 +44,7 @@
 
                     }
 
-                    console.log("휠 idx: " + elmSelecterIdx);
+                    // console.log("휠 idx: " + elmSelecterIdx);
 
                     // 화면 이동 0.8초(800)
                     $("html,body").stop().animate({
@@ -65,14 +65,14 @@ $(".main_footer a").on("click", function(event){
     var idx = hash.substring(4, hash.length);
 
     elmSelecterIdx = idx;
-    console.log("click idx: " + elmSelecterIdx);
+    // console.log("click idx: " + elmSelecterIdx);
 
     $("html, body").animate({scrollLeft: target.offset().left}, 700);
 });
 
 $(window).resize(function (){
     // var width = $(window).width();
-    console.log("elmSelecterIdx: " + elmSelecterIdx);
+    // console.log("elmSelecterIdx: " + elmSelecterIdx);
 
     var target = $("#sec" + elmSelecterIdx);
 
