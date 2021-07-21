@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 스크롤바 숨기기 */
+html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+
+/* 메인 섹션 부분 */
+.boxwrap { 
+    display: table; 
+    table-layout: fixed; 
+    width: 500vw; 
+    height: 100vh; 
+    table-layout: fixed;
+}
+.box{ 
+    display: table-cell;
+    position:relative; 
+    font-size:24pt;
+    
+}
+/* 이미지 부분 */
+.main_img {
+    width: 40vw;
+    height: 70vh;
+    margin-left: 5vw;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+
+/* 글씨 부분 */
+.text {
+    display: block;
+    float: right;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    width: 40vw;
+    text-align: center;
+
+}
+.text > h1 {
+    font-size: 8vmin;
+    font-family: 'East Sea Dokdo', cursive;
+    color: white;
+}
+.text > p {
+    font-size: 2vmin;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: .2rem;
+    margin-bottom: 30px;
+}
+
+/* 바로가기 버튼 */
+.text > button {
+    background:none;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.text > button:hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* 푸터 */
+.main_footer {
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 20px;
+    
+}
+.main_footer > ul {
+    display: flex;
+}
+.main_footer > ul > li {
+    width: 1024px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.main_footer > ul  {
+    height: 1px;
+    /* background-color: white; */
+}
+/* 애기 네비 */
+.main_footer > ul > li > a {
+    display: block;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+}
+.main_footer a:hover {
+    font-size:40px;
+    transition: 0.4s;
+}
+
+
+/* 미디어쿼리 */
+
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+    .main_gnb {
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0.9068736141906873) 0%, rgba(9,9,121,0) 88%);    
+    }
+    .boxwrap {
+        width: 400vw;
+    }
+    .main_img {
+        width: 100%;
+        height: 45vh;
+        margin: 0;
+    }
+    .text {
+        display: block;
+        width: 100%;
+        top: 45vh;
+        left: 0;
+    }
+    .text h1 {
+        text-align: left;
+        font-size: 50px;
+        padding: 10px 5%;
+    }
+    .text p {
+        text-align: left;
+        padding: 0px 5%;
+        font-size: 2vmax;
+        word-break: break-all;
+        width: 90vw;
+    }
+    .text > button {
+        display: inline-block;
+        text-align: center;
+    }
+
+
+}

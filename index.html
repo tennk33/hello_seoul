@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <!-- 메인페이지 -->
+    <div>
+        <div id="wrap">
+            <!-- 내비게이션 -->
+            <div class="main_gnb">
+                <span><a href="index.html">Hello, Seoul</a></span>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- 메뉴 목록 -->
+            <div class="hide_menu">
+                <div class="list_img" style="background-image: url(images/ciaran-o-brien-qegMLAiTBA4-unsplash.jpg)"></div>
+                <ul class="menu_list">
+                    <li><a href="library/culture.html">문화시설</a></li>
+                    <li><a href="library/event.html">축제 및 행사</a></li>
+                    <li><a href="library/restaurant.html">맛집</a></li>
+                    <li><a href="library/weather.html">날씨정보</a></li>
+                </ul>
+                <div>
+                    <button class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- 스크롤 -->
+            <div class="boxwrap">
+            <!-- 섹션1 -->
+                    <div class="box" id="sec1" style="background-color:#1a1a1d;">
+                        <div class="main_img" style="background-image: url(images/sunyu-kim-VvfzgOYqaws-unsplash.jpg);"></div>
+                        <div class="text">
+                            <h1>문화시설</h1>                           
+                                <p>콘텐츠의 힘은 대중으로부터 나오며 많은 사람의 관심과 사랑이 모일수록 그 가치는 더욱 높아집니다.
+                                    모두가 함께 즐길수록 힘이 커지는 문화 콘텐츠.
+                                    모두의 사랑을 기다리고 있는 문화시설을 소개합니다.</p>                      
+                            <button type="button" onclick="location.href='library/culture.html' ">바로가기</button>
+                        </div>
+                    </div> 
+                <!-- 섹션2 -->
+                <div class="box" id="sec2" style="background-color: #2a353f;">
+                    <div class="main_img" style="background-image: url(images/david-utt-FUhqOPOwtCk-unsplash.jpg);"></div>
+                        <div class="text">    
+                            <h1>축제 및 행사</h1>
+                            <p>지친 시민들의 몸과 마음을 치유해주고 힘과 용기를 주는 각종 이벤트들과 페스티벌 참가를 통해 일상 속에서 소확행을 누릴 수 있습니다.
+                            </p>
+                            <button  type="button" onclick="location.href='library/event.html' ">바로가기</button>
+                        </div>
+                    </div>
+                <!-- 섹션3 -->
+                <div class="box" id="sec3" style="background-color:#1a1a1d;">
+                    <div class="main_img" style="background-image: url(images/markus-winkler-UI0ylIEHxMM-unsplash.jpg);"></div>
+                        <div class="text">    
+                            <h1>맛집</h1>
+                            <p>미쉐린 가이드에 선정되어 전 세계적으로 인정받은 고급 레스토랑부터 수십 년 전통을 자랑하는 한식당, 길거리 음식 명소까지 가족, 연인, 친구와 함께 특별한 시간을 보내세요! </p>
+                            <button type="button" onclick="location.href='library/restaurant.html' ">바로가기</button>
+                        </div>
+                    </div>
+                <!-- 섹션4 -->
+                <div class="box" id="sec4" style="background-color: #2a353f;">
+                    <div class="main_img" style="background-image: url(images/geonhui-lee-qCXnF-nNGwY-unsplash.jpg);"></div>
+                        <div class="text">    
+                            <h1>날씨정보</h1>
+                            <p>오늘의 날씨 정보를 통해 더 효율적으로 서울을 여행하세요.</p>
+                            <button type="button" onclick="location.href='library/weather.html' ">바로가기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="main_footer">
+            <ul>
+                <li><a href="#sec1">●</a></li>
+                <li><a href="#sec2">●</a></li>
+                <li><a href="#sec3">●</a></li>
+                <li><a href="#sec4">●</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        
+
+
+
+</script>
+</body>
+</html>

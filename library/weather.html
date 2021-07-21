@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/weather.css">
+</head>
+<body>
+    <!-- 내비게이션 -->
+    <div class="main_gnb">
+        <span><a href="../index.html">Hello, Seoul</a></span>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+    </div>
+    <!-- 메뉴 목록 -->
+    <div class="hide_menu">
+        <div class="list_img" style="background-image: url(../images/ciaran-o-brien-qegMLAiTBA4-unsplash.jpg)"></div>
+        <ul class="menu_list">
+            <li><a href="culture.html">문화시설</a></li>
+            <li><a href="event.html">축제 및 행사</a></li>
+            <li><a href="restaurant.html">맛집</a></li>
+            <li><a href="weather.html">날씨정보</a></li>
+        </ul>
+        <div>
+            <button class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- 헤더 -->
+    <div class="header">
+        <h1>날씨정보</h1>
+    </div>
+    <!-- 섹션 -->
+    <div class="main_weather">
+        <div class="icon">
+            <img src="#" alt="아이콘" id="icon">
+        </div>
+        <div class="main_desc">
+            <h2>서울</h2>
+            <h3>온도</h3>
+            <h4>날씨</h4>
+        </div>
+        <div class="box"></div>
+    </div>
+    <div id="bg" style="background-image: url(../images/jose-fontano-TdPQp3fjzOw-unsplash.jpg);"></div>
+
+    <div class="second_weather">
+        <div class="second_desc">
+            <h1>체감온도:</h1>
+            <h2>최저기온</h2>
+            <h3>최고기온</h3>
+            <h4>습도</h4>
+            <h5>풍속</h5>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div id="footer">
+            Copyright 2021. Web Front-end developer portfolio
+        </div>
+    </footer>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/weather.js"></script>
+</body>
+</html>

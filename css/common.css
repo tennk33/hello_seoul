@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 13px 'Arial';
+}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+html,body { margin:0; padding:0; width:100%; height:100%;}
+
+/* 내비게이션 */
+.main_gnb {
+    overflow: hidden;
+    width: 100vw;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.main_gnb > span {
+    float: left;
+    margin-left: 7vw;
+}
+.main_gnb > span > a {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 70px;
+}
+/* 네비 메뉴버튼 */
+.main_gnb > button {
+    float: right;
+    margin-right: 30px;
+    border: none;
+    background: none;
+}
+.main_gnb > button > svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+    padding: 15px;
+}
+.main_gnb > button:hover {
+    cursor: pointer;
+}
+/* 메뉴 목록 */
+.hide_menu {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #262629;
+    text-align: right;
+    position: fixed;
+    top:0;
+}
+.hide_menu > ul {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+.hide_menu > ul > li {
+    padding: 20px;
+}
+.hide_menu > ul > li > a {
+    color: #bebebe;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Noto Serif KR', serif;
+}
+.hide_menu > ul > li > a:hover {
+    color: white;
+}
+/* 메뉴화면 배경 */
+.list_img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:grayscale(100%);
+}
+/* 메뉴 닫기 버튼 */
+.close {
+    /* display: none; */
+    margin-top: 8px;    
+    border: none;
+    background: none;
+    position: fixed;
+    right: 36px;
+}
+.close > svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+    padding: 15px;
+}
+.close:hover {
+    cursor: pointer;
+}
+
+/* 푸터 */
+#footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    font-family: 'Noto Serif KR', serif;
+
+}
+/* 미디어쿼리 */
+
+/* 모바일 사이즈 */
+@media screen and (max-width:767px)  {
+    
+    .main_gnb > span {
+        margin-left: 5%;
+    }
+    .main_gnb > button {
+        margin-right: 0;
+    }
+    .hide_menu > ul > li > a {
+        font-size: 5vmax;
+    }
+
+}

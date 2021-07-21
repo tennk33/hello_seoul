@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 내비 */
+.main_gnb {
+    background-color: white;
+}
+.main_gnb > span > a {
+    color: black;
+}
+.main_gnb > button  > svg {
+    color: black;
+}
+.hide_menu {
+    z-index: 1000000;
+    /* 맨위에 있으라고 */
+}
+/* 헤더 */
+.header {
+    text-align: center;
+    margin-top: 70px;
+    width: 300px;
+    margin: 0 auto;
+}
+.header > h1 {
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'East Sea Dokdo', cursive;
+    letter-spacing: 1.2rem;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+
+    
+}
+/* 날씨 부분 */
+.main_weather {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 350px;
+    height: 500px;
+    margin-top: 100px;
+    padding: 20px;
+}
+.icon {
+    float: left;
+    /* line-height: 250px; */
+}
+#icon {
+    width: 120px;
+    margin-left: 20px;
+
+    
+}
+.main_desc {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.main_desc > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+}
+.main_desc > h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+
+
+}
+.main_desc > h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+
+}
+/* 배경이미지 */
+#bg {
+    width: 100%;
+    height: 800px;
+    position:absolute;
+    top: 70px;
+    z-index: -100;
+    background-attachment: fixed;
+}
+/* 흰박스 */
+.box {
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.192);
+    z-index: -50;
+}
+/* 날씨 자잘한 정보들 */
+.second_desc {
+    padding: 50px;
+    margin-top: 0;
+    /* background-color: black; */
+}
+.second_desc > h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+}
+.second_desc > h2, .second_desc > h3, .second_desc > h4, .second_desc > h5 {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:767px) {
+    /* 헤더 */
+    .header { 
+        display: none;
+    }
+    /* 아이콘 */
+    .icon {
+        float: none;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 3vw;
+    }
+    /* 날씨 */
+    .main_desc {
+        float: none;
+        margin-left: 20vw;
+    }
+    .box {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* 날씨정보 */
+    .second_desc {
+        background-color: white;
+    }
+}

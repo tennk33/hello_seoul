@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 내비게이션 -->
+    <div class="main_gnb">
+        <span><a href="../index.html">Hello, Seoul</a></span>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+    </div>
+    <!-- 메뉴 목록 -->
+    <div class="hide_menu">
+        <div class="list_img" style="background-image: url(../images/ciaran-o-brien-qegMLAiTBA4-unsplash.jpg)"></div>
+        <ul class="menu_list">
+            <li><a href="culture.html">문화시설</a></li>
+            <li><a href="event.html">축제 및 행사</a></li>
+            <li><a href="restaurant.html">맛집</a></li>
+            <li><a href="weather.html">날씨정보</a></li>
+        </ul>
+        <div>
+            <button class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="main_wrap">
+        <!-- 헤더 -->
+        <div id="header">
+            <h1>문화시설</h1>
+            <video autoplay loop muted>
+                <source src="../images/Church-49381.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- 섹션 -->
+        <div class="wrap">
+            <div class="category">
+                <ul>
+                    <li id="cat1"><a href="#cat1">제목순</a></li>
+                    <li id="cat2"><a href="#cat2">조회순</a></li>
+                </ul>
+            </div>
+            <div class="article">
+                <ul>
+                    <li id="article_0">
+                        <a href="#modal" class="open_modal">
+                            <img src="#" alt="이미지" class="img0">
+                            <h2>이름</h2>
+                        </a>
+                    </li>
+                    <li id="article_1"> 
+                        <a href="#modal" class="open_modal">
+                            <img src="#" alt="이미지" class="img1">
+                            <h2>이름</h2>
+                        </a>
+                    </li> 
+                    <li id="article_2">
+                        <img src="#" alt="이미지" class="img2">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                    <li id="article_3">
+                        <img src="#" alt="이미지" class="img3">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                    <li id="article_4">
+                        <img src="#" alt="이미지" class="img4">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                    <li id="article_5">
+                        <img src="#" alt="이미지" class="img5">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                    <li id="article_6">
+                        <img src="#" alt="이미지" class="img6">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                    <li id="article_7">
+                        <img src="#" alt="이미지" class="img7">
+                        <a href="#modal" class="open_modal"><h2>이름</h2></a>
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- 모달 -->
+    <div class="modal" id="modal">
+        <div class="modal_body">
+            <button class="modal_close">닫기</button>
+            <div class="modal_header">이름</div>
+            <div class="modal_addr">주소</div>
+            <div id="map" style="width:100%;height:80%;"></div>
+        </div>        
+    </div>
+    <!-- 페이지 목록 넘기기 -->
+    <div class="pagelist">
+        <ul>
+            <li id="num1"><a href="#num1">1</a></li>
+            <li id="num2"><a href="#num2">2</a></li>
+            <li id="num3"><a href="#num3">3</a></li>
+            <li id="num4"><a href="#num4">4</a></li>
+        </ul>
+    </div>
+    <!-- 푸 터 -->
+    <footer>
+        <div id="footer">
+            Copyright 2021. Web Front-end developer portfolio
+        </div>
+    </footer>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/culture.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cb58668833e73047398d6e5f45c9dbd1&libraries=services"></script>
+</body>
+</html>
