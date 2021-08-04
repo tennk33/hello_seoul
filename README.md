@@ -6,7 +6,7 @@
 **Ajax를 통해 서울 관광정보 API, 카카오맵 API 그리고 날씨 API를 연동하여 페이지를 만들었습니다.**
 
 * **사용한 언어 :**
-  * HTML
+  * HTML5
   * CSS3
   * Javascript
   * jQuery
