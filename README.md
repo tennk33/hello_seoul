@@ -1,6 +1,6 @@
 # hello_seoul
 
-**http://tennk33.dothome.co.kr/hello_seoul**   
+## http://tennk33.dothome.co.kr/hello_seoul   
 **Hello Seoul은 서울의 문화시설, 축제 및 행사, 맛집의 정보를 지도위치와 함께 보여주며    
 현재 서울의 날씨를 함께 제공하는 반응형 사이트입니다.**   
 **Ajax를 통해 서울 관광정보 API, 카카오맵 API 그리고 날씨 API를 연동하여 페이지를 만들었습니다.**
