@@ -56,3 +56,7 @@ $(list4).on("mouseout", function(){
     $(".list_img").attr("style", "background-image:url(../images/ciaran-o-brien-qegMLAiTBA4-unsplash.jpg)")
 });
 
+
+
+// 사이즈 크기 조정 할때마다 새로고침
+$(window).resize(function(){location.reload();});
