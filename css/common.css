@@ -119,7 +119,18 @@ html,body { margin:0; padding:0; width:100%; height:100%;}
 
 }
 /* 미디어쿼리 */
-
+/* 태블릿 */
+@media screen and (max-width: 1024px) {
+    .main_gnb {
+        width: 100vw;
+        height: 70px;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+}
 /* 모바일 사이즈 */
 @media screen and (max-width:767px)  {
     

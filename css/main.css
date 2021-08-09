@@ -88,7 +88,6 @@ html::-webkit-scrollbar {
     position: fixed;
     bottom: 0px;
     margin-bottom: 20px;
-    
 }
 .main_footer > ul {
     display: flex;
@@ -101,7 +100,6 @@ html::-webkit-scrollbar {
 }
 .main_footer > ul  {
     height: 1px;
-    /* background-color: white; */
 }
 /* 애기 네비 */
 .main_footer > ul > li > a {
@@ -160,6 +158,20 @@ html::-webkit-scrollbar {
         display: inline-block;
         text-align: center;
     }
+    /* 푸터 */
+.main_footer {
+    height: 70px;
+    width: 100vw;
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 20px;
+    background-color: red;
 
+    display: none;
+}
+.main_footer > ul {
+    display: flex;
+}
+    
 
 }

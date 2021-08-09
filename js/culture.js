@@ -101,7 +101,7 @@ $.ajax({
     var culture = data;
 
     // 0번 인덱스
-    $('#article_0 > a').on('click',function(){
+    $('#article_0 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[0].title);
         $('.modal_addr').text(culture.response.body.items.item[0].addr1);
         var title = culture.response.body.items.item[0].title;
@@ -146,7 +146,7 @@ $.ajax({
         }); 
     });
     // 1번 인덱스
-    $('#article_1 > a').on('click',function(){
+    $('#article_1 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[1].title);
         $('.modal_addr').text(culture.response.body.items.item[1].addr1);
         var title = culture.response.body.items.item[1].title;
@@ -191,7 +191,7 @@ $.ajax({
         }); 
     });
     // 2번 인덱스
-    $('#article_2 > a').on('click',function(){
+    $('#article_2 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[2].title);
         $('.modal_addr').text(culture.response.body.items.item[2].addr1);
         var title = culture.response.body.items.item[2].title;
@@ -236,7 +236,7 @@ $.ajax({
         }); 
     });
     // 3번 인덱스
-    $('#article_3 > a').on('click',function(){
+    $('#article_3 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[3].title);
         $('.modal_addr').text(culture.response.body.items.item[3].addr1);
         var title = culture.response.body.items.item[3].title;
@@ -281,7 +281,7 @@ $.ajax({
         }); 
     });
     // 4번 인덱스
-    $('#article_4 > a').on('click',function(){
+    $('#article_4 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[4].title);
         $('.modal_addr').text(culture.response.body.items.item[4].addr1);
         var title = culture.response.body.items.item[4].title;
@@ -326,7 +326,7 @@ $.ajax({
         }); 
     });
     // 5번 인덱스
-    $('#article_5 > a').on('click',function(){
+    $('#article_5 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[5].title);
         $('.modal_addr').text(culture.response.body.items.item[5].addr1);
         var title = culture.response.body.items.item[5].title;
@@ -371,7 +371,7 @@ $.ajax({
         }); 
     });
     // 6번 인덱스
-    $('#article_6 > a').on('click',function(){
+    $('#article_6 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[6].title);
         $('.modal_addr').text(culture.response.body.items.item[6].addr1);
         var title = culture.response.body.items.item[6].title;
@@ -416,7 +416,7 @@ $.ajax({
         }); 
     });
     // 7번 인덱스
-    $('#article_7 > a').on('click',function(){
+    $('#article_7 > .open_modal ').on('click',function(){
         $('.modal_header').text(culture.response.body.items.item[7].title);
         $('.modal_addr').text(culture.response.body.items.item[7].addr1);
         var title = culture.response.body.items.item[7].title;
