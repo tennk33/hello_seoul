@@ -152,6 +152,11 @@
     font-weight: bold;
     padding: 7px;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 18px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .modal_addr {
     font-size: 20px;
@@ -255,24 +260,26 @@
         white-space: nowrap;
         /* 이름 너무 길면 생략 */
     }
+    /* 모달 */
     .modal_header {
         font-size: 15px;
         padding: 5px;
         box-sizing: border-box;
+        margin-top: 20px;
     }
     .modal_addr {
         font-size: 12px;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
     .modal_close {
         position: absolute;
         top: 0;
         right: 0;
         width: 50px;
-        height: 30px;
+        height: 20px;
         margin-right: 10px;
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: bold;
         background-color: black;
         color: white;
@@ -284,8 +291,8 @@
         top: 50%;
         left: 50%;
         width: 90%;
-        height: 70%;
-        padding: 20px;
+        height: 80%;
+        padding: 10px;
         text-align: center;
         background-color: white;
         border-radius: 10px;
@@ -295,9 +302,8 @@
         box-sizing: border-box;
     }
     #map {
-        margin-top: 0;
         position: absolute;
-        bottom: 10px;
+        bottom: 3%;
         left: 5%;
         width: 90%;
 
