@@ -84,6 +84,7 @@ $(window).resize(function (){
         });
 });
 
+
 // 바로가기 버튼에 마우스 올렸을때 색깔 변하는 이벤트
 $(".text > button").on("mouseover", function(){
     $(".text > button").css({
@@ -160,3 +161,6 @@ $(list4).on("mouseover", function(){
 $(list4).on("mouseout", function(){
     $(".list_img").attr("style", "background-image:url(images/ciaran-o-brien-qegMLAiTBA4-unsplash.jpg)")
 });
+
+
+

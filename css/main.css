@@ -118,8 +118,8 @@ html::-webkit-scrollbar {
 /* 미디어쿼리 */
 
 /* 태블릿 */
-@media screen and (min-width:768px) and (max-width:1023px) {
-    
+@media screen and (min-width:768px) and (max-width:1024px) {
+
 }
 
 /* 모바일 */
@@ -159,19 +159,9 @@ html::-webkit-scrollbar {
         text-align: center;
     }
     /* 푸터 */
-.main_footer {
-    height: 70px;
-    width: 100vw;
-    position: relative;
-    bottom: 0px;
-    margin-bottom: 20px;
-    background-color: red;
-
-    display: none;
-}
-.main_footer > ul {
-    display: flex;
-}
-    
+    .main_footer {
+        display: block;
+    }
+        
 
 }

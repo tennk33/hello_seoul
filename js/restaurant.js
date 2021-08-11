@@ -81,6 +81,7 @@ $('.category > ul > li:last-child > a').on("click", function(){
 // 모달 창 띄우기
 $('.open_modal').on('click',function(){
     $('.modal').css('display','block');
+    $(window).resize(function(){location.reload();});
 });
 $('.modal_close').on('click',function(){
     $('.modal').css('display','none');
